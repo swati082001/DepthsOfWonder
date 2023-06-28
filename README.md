@@ -5,6 +5,8 @@
 
 Deployed link-
 https://depths-of-wonder.vercel.app/
+Figma Design-
+https://www.figma.com/file/4pZWSYXNaFHORqwaFIhASP/Untitled?type=design&node-id=0%3A1&mode=design&t=FUrYzBUUJFcnEdcr-1
 
 ## OBJECTIVE✨
 
