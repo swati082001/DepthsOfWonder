@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Prata&display=swap');
+
+*{
+    font-family: 'Prata', serif;
+    color: white;
+}
+body{
+    background-image: url("https://t4.ftcdn.net/jpg/01/08/43/87/360_F_108438736_Y60qK0kQ3B3k44JRK8xxercgEkyt0zyO.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    /* background-color: #3f51b5; */
+    background-color: gray;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+}
+
+#scorecount {
+    position: absolute;
+    top:20px;
+    right:20px;
+    background-color: black;
+    padding: 28px;
+    border-radius: 20px;
+    color: white;
+}
+
+.obstacle {
+    background-image: url("sk.jpg");
+    background-size: cover;
+    width:100px;
+    height: 100px;
+    position: absolute;
+    bottom:150px;
+    right:120px;
+}
+
+.animate{
+    animation: aniob 5s linear infinite;
+}
+
+@keyframes aniob {
+    0% {
+        left:100vw;
+    }
+    100% {
+        left:-10vw;
+    }
+}
+
+.scuba {
+    background-image: url("https://www.freeiconspng.com/thumbs/scuba-icon-png/diving-scuba-png-30.png");
+    background-size: cover;
+    width: 194px;
+    height: 146px;
+    position: absolute;
+    bottom:150px;
+    left:80px;
+}
+.diver {
+    animation: ani 1s linear ;
+}
+
+@keyframes ani {
+    0% {
+        bottom:150px;
+    }
+    25% {
+        bottom:550px;
+    }
+    50% {
+        bottom:500px;
+    }
+    75% {
+        bottom:211px;
+    }
+    100% {
+        bottom:150px;
+    }
+}
+
+.gameover {
+    visibility: hidden;
+    position: absolute;
+    top: 40vh;
+    left: 35vw;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 6rem;
+    background-color: rgb(238, 29, 29);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.won {
+    visibility: hidden;
+    position: absolute;
+    top: 40vh;
+    left: 30vw;
+    color: black;
+    font-weight: bold;
+    font-size: 6rem;
+    background-color: rgb(126, 227, 126);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 1;
+}

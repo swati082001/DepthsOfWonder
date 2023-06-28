@@ -13,11 +13,11 @@
 
 - Depths Of Wonder is a single player real time game. This game is built with the help of HTML, CSS and Vanilla Javascript. 
 
-The Theme of this game is Underwater providing immersive gaming experience to the user.  The player will be a underwater diver who has to dodge the incoming obstacles to finally reach the submarine. 
+The Theme of this game is Underwater providing immersive gaming experience to the user.  The player will be a underwater diver who has to dodge the incoming obstacles. 
 
-The movement of the player will be managed with the help of Up Arrow Key, Left Arrow Key and Right arrow key.
+The movement of the player will be managed with the help of Up Arrow Key,Down Arrow key, Left Arrow Key and Right arrow key.
 
-The Player will lose the game if he touches any of the obstacle in his way. The Player will win the game if he clears all the obstacles and reaches his destination. For each win the player will be credited with 40 points and for each lose, he will be credited 0 points.
+The Player will lose the game if he touches any of the obstacle in his way. The Player will win the game if he clears all the obstacles and scores 10 points.
 
 ---
 

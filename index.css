@@ -3,14 +3,13 @@
 
 *{
     font-family: 'Prata', serif;
+    color: white;
 }
 
 html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
-    /* font-family: 'Permanent Marker', cursive; */
 }
 
 body{
@@ -19,11 +18,9 @@ body{
     background-size: cover;
     background-blend-mode: multiply;
     background-color: #3f51b5;
-    color: white;
 }
 
 #head{
-    color: white;
     font-size: 70px;
     font-weight: 700;
     text-align: center;
@@ -112,14 +109,12 @@ body{
     width: 60%;
     padding: 10px;
     background-color: transparent;
-    color: white;
     border: none;
     border-bottom: 1px solid white;
     margin-bottom: 10px;
   }
 
   #form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
     font-size: 16px;
     opacity: 1; /* Firefox */
   }
