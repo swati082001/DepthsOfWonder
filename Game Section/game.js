@@ -1,17 +1,21 @@
+let currentPlayer = JSON.parse(localStorage.getItem("currentPlayer"));
+let info =JSON.parse(localStorage.getItem("playerinfo"))|| [];
+let scorecount = document.getElementById("scorecount")
+console.log(currentPlayer)
 
-        
-    // Winning sound
-    win = new Audio();
+// Winning sound
+win = new Audio();
     win.src = "./Audio/Audio_won.wav";
       
     // Losing sound
     lose = new Audio();
     lose.src = "./Audio/Audio_dead.mp3";
-
-
-
-cross = true;
-score = 0;
+    
+    
+    
+    cross = true;
+    score = 0;
+    scorecount.innerHTML = `${currentPlayer.nickname} score : ` + score;
 
 //for the movement of the player
 document.onkeydown = function(e) {
@@ -74,10 +78,15 @@ setInterval(() => {
 
     if (offsetx < 100 && offsety <= 146) {
         if (score != 0)
-            scorecount.innerHTML = "Your score : " + score;
+            scorecount.innerHTML = `${currentPlayer.nickname} score : ` + score;
            gameover.style.visibility = 'visible';
            lose.play();
            obstacle.classList.remove('animate');
+
+           setTimeout(()=>{
+
+               window.location.href="../LeaderBoard/leaderboard.html"
+           },2000)
     } 
     
     else if (offsetx < 125 && cross) {
@@ -86,12 +95,15 @@ setInterval(() => {
         cross = false;
         
 
-        if (score >= 5) {
+        if (score >= 10) {
            
             won.style.visibility = 'visible';
             win.play();
             obstacle.classList.remove('animate');
-            clearInterval(interval);
+            clearInterval();
+            setTimeout(()=>{
+                window.location.href="../LeaderBoard/leaderboard.html"
+            },2000)
         }
 
         setTimeout(() => {
@@ -111,5 +123,13 @@ setInterval(() => {
 }, 100);
 
 function updateScore(score) {
-    scorecount.innerHTML = "Your score : " + score;
+    scorecount.innerHTML = `${currentPlayer.nickname} score : ` + score;
+
+    info.forEach((el) => {
+        if (el.name === currentPlayer.name && el.nickname === currentPlayer.nickname) {
+            el.score += score; // Add the score to the previous score
+        }
+    });
+
+    localStorage.setItem("playerinfo", JSON.stringify(info));
 }

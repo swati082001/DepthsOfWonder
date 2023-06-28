@@ -16,8 +16,9 @@
     <ul>
         <li>Use the Up Arrow Key to make the underwater diver swim upwards, avoiding obstacles in the way.</li>
         <li>Use the Left Arrow Key to move the diver to the left and the Right Arrow Key to move the diver to the right, navigating through the underwater challenges.</li>
+        <li>Use the Down Arrow key to move the diver down.</li>
         <li>Be careful not to touch any of the obstacles, as it will result in a game over.</li>
-        <li>Reach the submarine at the end of the level to successfully complete it and earn 40 points. Each obstacle touched will result in 0 points.</li>
+        <li>Gather 10 Points to win the round.</li>
     </ul>
 
   </div>
@@ -26,11 +27,12 @@
     <div class="modal-content">
       <span class="close">&times;</span>
         <div id="form">
-            <input type="text" placeholder="Enter Your Name"><br>
-            <input type="text" placeholder="Enter Your Nickname"><br>
-            <a href="./Game Section/game.html">
-                <button id="start" >Let's Start</button>
-            </a>
+          <form action="" onsubmit="handleSubmit(event)">
+            <input type="text" id="name" placeholder="Enter Your Name"><br>
+            <input type="text" id="nickname" placeholder="Enter Your Nickname"><br>
+            <input type="submit" value="Let's Start" id="start" ></input>
+        
+          </form>
         </div>
     </div>
   

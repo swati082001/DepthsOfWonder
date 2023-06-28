@@ -28,10 +28,10 @@ body{
 }
 
 .obstacle {
-    background-image: url("sk.jpg");
+    background-image: url("https://www.freeiconspng.com/uploads/animals-shark-icon-2.png");
     background-size: cover;
-    width:100px;
-    height: 100px;
+    width:140px;
+    height: 140px;
     position: absolute;
     bottom:150px;
     right:120px;
@@ -49,6 +49,7 @@ body{
         left:-10vw;
     }
 }
+
 
 .scuba {
     background-image: url("https://www.freeiconspng.com/thumbs/scuba-icon-png/diving-scuba-png-30.png");
