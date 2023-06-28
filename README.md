@@ -3,6 +3,9 @@
 <h1>💫DEPTHS OF WONDER💫</h1>
 <br/>
 
+Deployed link-
+https://depths-of-wonder.vercel.app/
+
 ## OBJECTIVE✨
 
 > Depths Of Wonder is a real time full stack single player game. This game is build with the help of HTML, CSS and vanilla Javasript, also incorporating an immersive gaming experience.
