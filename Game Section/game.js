@@ -96,7 +96,13 @@ setInterval(() => {
         
 
         if (score >= 10) {
-           
+            info.forEach((el) => {
+                if (el.name === currentPlayer.name && el.nickname === currentPlayer.nickname) {
+                    el.score += 10; // Add the score to the previous score
+                }
+            });
+        
+            localStorage.setItem("playerinfo", JSON.stringify(info));
             won.style.visibility = 'visible';
             win.play();
             obstacle.classList.remove('animate');
@@ -125,11 +131,5 @@ setInterval(() => {
 function updateScore(score) {
     scorecount.innerHTML = `${currentPlayer.nickname} score : ` + score;
 
-    info.forEach((el) => {
-        if (el.name === currentPlayer.name && el.nickname === currentPlayer.nickname) {
-            el.score += score; // Add the score to the previous score
-        }
-    });
 
-    localStorage.setItem("playerinfo", JSON.stringify(info));
 }
