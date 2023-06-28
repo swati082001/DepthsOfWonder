@@ -1,4 +1,7 @@
+
+// Retrieve the current player information from local storage
 let currentPlayer = JSON.parse(localStorage.getItem("currentPlayer"));
+// Retrieve player information from local storage or initialize an empty array
 let info =JSON.parse(localStorage.getItem("playerinfo"))|| [];
 let scorecount = document.getElementById("scorecount")
 console.log(currentPlayer)

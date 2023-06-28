@@ -1,6 +1,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Prata&display=swap');
 
+  /* Global Styles */
 *{
     font-family: 'Prata', serif;
     color: white;
@@ -19,7 +20,7 @@ body{
     background-blend-mode: multiply;
     background-color: #3f51b5;
 }
-
+/* Game Title */
 #head{
     font-size: 70px;
     font-weight: 700;
@@ -27,6 +28,7 @@ body{
     margin-top: 10%; 
 }
 
+/* Start Button */
 #myBtn{
     margin-left: 38vw;
     padding: 15px;
@@ -36,7 +38,7 @@ body{
     background-color: #7f8bcf;
     border: none;
 }
-
+/* Modal Styles */
 .modal {
     display: none; 
     position: fixed; 
@@ -74,6 +76,7 @@ body{
     cursor: pointer;
   }
 
+  /* Instructions Section */
   #instructions{
     width: 60%;
     padding: 10px;
@@ -92,6 +95,7 @@ body{
     text-align: initial;
     line-height: 2em;
   }
+  /* Form Styles */
   #form{
     text-align: center;
   }
@@ -115,9 +119,9 @@ body{
     margin-bottom: 10px;
   }
 
-  #form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  #form input::placeholder { 
     font-size: 16px;
-    opacity: 1; /* Firefox */
+    opacity: 1; 
   }
 
   
